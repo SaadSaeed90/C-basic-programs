@@ -1,0 +1,38 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+    char a[10];
+    cout<<"Enter 10 characters: "<<endl;
+    for (int i = 0; i < 10; i++)
+    {
+        cin>>a[i];
+    }
+
+    for (int i = 0; i < 10; i++)
+    {
+        for (int j = 0+i; j < 10; j++)
+        {
+            if (a[i]<a[j])
+            {
+                int temp = a[i];
+                a[i]=a[j];
+                a[j]=temp;
+            }
+            
+        }
+        
+    }
+
+    cout<<"The descending of the characters you entered is: "<<endl;
+
+    for (int i = 0; i < 10; i++)
+    {
+        cout<<a[i]<<" ";
+    }
+    
+    
+    
+}
